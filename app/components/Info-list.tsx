@@ -6,7 +6,7 @@ import listIcon from "@/assets/images/icon-list.svg";
 
 export default function InfoList() {
   return (
-    <ul className="flex flex-col gap-2">
+    <ul className="flex flex-col gap-2 mb-8">
       <li className="flex gap-3 items-start">
         <Image src={listIcon} alt="icon of list" />
         <p>Product discovery and building what matters</p>

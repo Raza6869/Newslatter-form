@@ -13,10 +13,12 @@ export default function Home() {
   return (
     <main className=" bg-white">
       <Image src={mobileImage} alt="Newslatter illustration Mobile" />
-      <Info />
-      <Form />
+      <div className="px-6 py-8">
+        <Info />
+        <Form />
+      </div>
       {
-      //<Sucess />
+        //<Sucess />
       }
     </main>
   );

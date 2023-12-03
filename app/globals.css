@@ -15,4 +15,6 @@ button {
 }
 
 button:hover {
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  cursor: pointer;
 }

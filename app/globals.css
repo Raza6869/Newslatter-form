@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 h1 {
-  @apply text-3xl font-bold mb-4 text-darkSlateGrey;
+  @apply text-3xl font-bold mb-4 sm:text-5xl text-darkSlateGrey;
 }
 
 p {
-  @apply text-corchoalGrey;
+  @apply text-corchoalGrey sm:text-sm;
 }
 
 button {

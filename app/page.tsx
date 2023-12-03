@@ -12,12 +12,12 @@ import Sucess from "./components/Sucess";
 export default function Home() {
   return (
     <main className=" bg-white">
+      <Image src={mobileImage} alt="Newslatter illustration Mobile" />
+      <Info />
+      <Form />
       {
-        //<Image src={mobileImage} alt="Newslatter illustration Mobile" />
-        //<Info />
-        //<Form />
+      //<Sucess />
       }
-      <Sucess />
     </main>
   );
 }

@@ -13,3 +13,6 @@ p {
 button {
   @apply text-white rounded-md bg-darkSlateGrey h-12 font-bold;
 }
+
+button:hover {
+}

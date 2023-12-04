@@ -2,4 +2,9 @@
 //react
 import { createContext } from "react";
 
-export const FormContext = createContext("");
+interface ContextProps {
+  sucess: boolean;
+  setSucess: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const FormContext = createContext({} as ContextProps);

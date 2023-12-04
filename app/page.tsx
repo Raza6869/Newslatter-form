@@ -1,6 +1,7 @@
 "use client";
 //next imports
 import Image from "next/image";
+import { useEffect, useState, useContext } from "react";
 
 //media
 import mobileImage from "../assets/images/illustration-sign-up-mobile.svg";
@@ -11,11 +12,11 @@ import Info from "./components/Info";
 import Form from "./components/Form";
 import Sucess from "./components/Sucess";
 //context
-import FormProvider from "./context/formProvider";
-import UseFormContext from "./hook/useFormContext";
-import { useEffect, useState } from "react";
+import { FormContext } from "./context/formContext";
 
 export default function Home() {
+  const { sucess } = useContext(FormContext);
+
   const DeviceSize = () => {
     const [width, setWidth] = useState(0);
 
@@ -32,11 +33,12 @@ export default function Home() {
 
     return width;
   };
-  console.log(DeviceSize());
 
   return (
-    <FormProvider>
-      <main className=" bg-darkSlateGrey flex items-center justify-center h-screen">
+    <main className=" bg-darkSlateGrey flex items-center justify-center h-screen">
+      {sucess ? (
+        <Sucess />
+      ) : (
         <div className="bg-white sm:items-center justify-center sm:w-[800px] sm:h-[550px] sm:rounded-[30px] sm:p-4 sm:flex sm:flex-row-reverse">
           <Image
             src={DeviceSize() < 638 ? mobileImage : desktopImage}
@@ -48,11 +50,7 @@ export default function Home() {
             <Form />
           </div>
         </div>
-
-        {
-          //<Sucess />
-        }
-      </main>
-    </FormProvider>
+      )}
+    </main>
   );
 }

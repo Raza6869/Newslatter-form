@@ -1,13 +1,22 @@
 //next imports
 import Image from "next/image";
+import { useContext } from "react";
 
 //media
 import sucessicon from "@/assets/images/icon-success.svg";
 
+//context
+import { FormContext } from "../context/formContext";
+
 export default function Sucess() {
+  const { setSucess } = useContext(FormContext);
+  const goBack = () => {
+    setSucess(false);
+  };
+
   const useremail: string = "cocodasilva@gmail.com";
   return (
-    <main className="flex flex-col justify-between bg-white sm:w-[400px] sm:rounded-[30px] py-8 px-6 sm:px-14 sm:py-12">
+    <main className="flex flex-col justify-between bg-white sm:w-[400px] h-full sm:h-auto sm:rounded-[30px] py-8 px-6 sm:px-14 sm:py-12">
       <div className="flex flex-col gap-6 mt-16 sm:mt-0 sm:mb-8 ">
         <Image
           src={sucessicon}
@@ -23,7 +32,9 @@ export default function Sucess() {
           </p>
         </div>
       </div>
-      <button>Dimiss message</button>
+      <button className="button" onClick={goBack}>
+        Dimiss message
+      </button>
     </main>
   );
 }

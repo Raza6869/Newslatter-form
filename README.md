@@ -32,8 +32,8 @@ Users should be able to:
 
 <img src="./assets/images/screenshot-desktop.png" alt="desktop screenshot">
 <img src="./assets/images/screenshot-desktop-sucess.png" alt="desktop screenshot">
-<img src="./assets/images/screenshot-mobile.png" alt="desktop screenshot" height="64">
-<img src="./assets/images/screenshot-mobile-sucess.png" alt="desktop screenshot" height="64">
+<img src="./assets/images/screenshot-mobile.png" alt="desktop screenshot" height="420">
+<img src="./assets/images/screenshot-mobile-sucess.png" alt="desktop screenshot" height="395">
 
 ### Links
 

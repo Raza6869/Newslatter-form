@@ -9,12 +9,11 @@ import sucessicon from "@/assets/images/icon-success.svg";
 import { FormContext } from "../context/formContext";
 
 export default function Sucess() {
-  const { setSucess } = useContext(FormContext);
+  const { setSucess, email } = useContext(FormContext);
   const goBack = () => {
     setSucess(false);
   };
 
-  const useremail: string = "cocodasilva@gmail.com";
   return (
     <main className="flex flex-col justify-between bg-white sm:w-[400px] h-full sm:h-auto sm:rounded-[30px] py-8 px-6 sm:px-14 sm:py-12">
       <div className="flex flex-col gap-6 mt-16 sm:mt-0 sm:mb-8 ">
@@ -26,7 +25,7 @@ export default function Sucess() {
         <div>
           <h1>Thanks for subscribing!</h1>
           <p>
-            A confirmation email has been sent to <strong>{useremail}</strong>.
+            A confirmation email has been sent to <strong>{email}</strong>.
             Please open it and click the button inside to confirm your
             subscription
           </p>

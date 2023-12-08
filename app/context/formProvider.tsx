@@ -10,9 +10,10 @@ interface ReactTypes {
 
 export default function FormProvider({ children }: ReactTypes) {
   const [sucess, setSucess] = useState(false);
+  const [email, setEmail] = useState("");
 
   return (
-    <FormContext.Provider value={{ sucess, setSucess }}>
+    <FormContext.Provider value={{ sucess, setSucess, email, setEmail }}>
       {children}
     </FormContext.Provider>
   );

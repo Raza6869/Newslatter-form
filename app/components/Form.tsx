@@ -2,11 +2,14 @@ import { useContext } from "react";
 import { FormContext } from "../context/formContext";
 
 export default function Form() {
-  const { sucess, setSucess } = useContext(FormContext);
+  const { setSucess, setEmail } = useContext(FormContext);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     setSucess(true);
   };
 
@@ -20,6 +23,7 @@ export default function Form() {
         placeholder="email@company.com"
         className="border-[1px] hover:border-darkSlateGrey border-grey h-12 w-full rounded-md px-4 mb-2"
         required
+        onChange={handleChange}
       />
       <button type="submit" className="button">
         Subscrbe to monthly newsletter

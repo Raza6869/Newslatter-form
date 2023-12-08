@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Raza6869/Newslatter-form](https://github.com/Raza6869/Newslatter-form)
-- Live Site URL:
+- Live Site URL: [https://newslatter-form.vercel.app/](https://newslatter-form.vercel.app/)
 
 ## My process
 

@@ -61,7 +61,7 @@ Another thing I learned it's the image change when the screen is resized to brin
 
 ### Continued development
 
-After this project, which I made just for pratice and return to my studies, I wanna do some like a full-stack project to learn more about the back-end. After all, my objective in this carrer it's be a Fulltack Engeneer.
+After this project, which I did just to practice and get back to studying, I want to do a full stack project to learn more about back-end. After all, my goal in this career is to be a Fulltack Engineer.
 
 But, the focus right now, it's typescript and MongoDB.
 

@@ -55,7 +55,7 @@ Users should be able to:
 
 ### What I learned
 
-In this litte project, I started my studies with Typescript. Honestly, I liked so much, bringing more organization to my code is really impressive. On the other hand, I praticed more with the react context toll, which I used frequently in my latest projects.
+In this litte project, I started my studies with Typescript. Honestly, I liked so much, bringing more organization to my code is really impressive. On the other hand, I praticed more with the react context tool, which I used frequently in my latest projects.
 
 Another thing I learned it's the image change when the screen is resized to bring responsiveness to the project interface.
 
